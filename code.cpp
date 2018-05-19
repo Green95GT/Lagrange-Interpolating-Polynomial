@@ -1,7 +1,3 @@
-/* R/GA Code for Quokka problem */ 
-/* Submission of Algorithm Engineer open position */
-/* Philip Stathos */
-
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
@@ -32,9 +28,9 @@ int get_open( ifstream& file1 )
 
 void load_file( ifstream& file1 )
 {
-    //read quokka data file created from seven day census
+    //read animal data file created from seven day census
     
-    int ch, id, d, Fp, H, S, i; //quokka id#, day#, Happiness score, and Selfie count
+    int ch, id, d, Fp, H, S, i; //animal id#, day#, Happiness score, and Selfie count
     double Fc; //Food prepared, Food consumed
 
     vector< int > Id, day, FP, Sc;
@@ -71,7 +67,7 @@ void load_file( ifstream& file1 )
             
             fc.push_back( Id[i] * FC[i] );
             sc.push_back( Id[i] * Sc[i] ); //ordered pairs for lagrange polynomial. last element of all 3d vectors are set at 0 since only one measurment is made per day.
-        }                                  //multiplying by quokkas id# as an identifier.
+        }                                  //multiplying by animal id# as an identifier.
     }
 
     
@@ -81,13 +77,13 @@ void load_file( ifstream& file1 )
     cout << "How close to optimal (in terms of percent) would you like to achieve with today's feeding? " << endl;
     int acc;
     cin >> acc;
-    cout << "Submit Quokka's ID# for today's feeding amount: " << endl;;
+    cout << "Submit Animals's ID# for today's feeding amount: " << endl;;
     int ID; 
     cin >> ID;
-    cout << "How much food did Quokka #" << ID << " consume yesterday? (in kg) " << endl;
+    cout << "How much food did Animal #" << ID << " consume yesterday? (in kg) " << endl;
     double f; 
     cin >> f;
-    cout << "How mush food was Quokka #" << ID << " fed yesterday? (in kg) " << endl;
+    cout << "How mush food was Animal #" << ID << " fed yesterday? (in kg) " << endl;
     double pf;
     cin >> pf;
    
