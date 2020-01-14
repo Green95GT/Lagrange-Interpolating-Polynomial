@@ -1,4 +1,4 @@
-# Lagrange-Polynomial-Interpolation
+# Alternative to Machine Learning (Lagrange-Polynomial-Interpolation)
 
 Used as an alternative to Machine Learning. Interpolation is a type of estimation, a method of constructing new data points within the range of a discrete set of known data points. Specifically Lagrange Polynomials are used for this method.
 
